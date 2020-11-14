@@ -62,10 +62,10 @@ public class DSSinhVien {
     }
     public static void WriteFile_DSSV(SinhVien sv){
         try {
-            FileOutputStream fos = new FileOutputStream ("SinhVien.txt");
-            ObjectOutputStream oos = new ObjectOutputStream(fos);
-            oos.writeObject(sv);
-            fos.close();
+            BufferedWriter writer = new BufferedWriter(new FileWriter("SinhVien.txt", true));
+            String data = sv.getMaSV() +";"+sv.getHoTen()+";"+sv.getNamSinh() +";"+sv.getGioiTinh()+";"+sv.getMaLop()+"\n";
+            writer.append(data);
+            writer.close();
         }
         catch (Exception e) {
             System.out.println(e);
