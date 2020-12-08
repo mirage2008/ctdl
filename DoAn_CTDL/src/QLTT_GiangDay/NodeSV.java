@@ -1,5 +1,7 @@
 package QLTT_GiangDay;
 
+import QLTT_GiangDay.entities.SinhVien;
+
 public class NodeSV {
     private SinhVien sinhVien;
     private NodeSV next;
