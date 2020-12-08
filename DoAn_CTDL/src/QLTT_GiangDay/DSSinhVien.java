@@ -87,6 +87,9 @@ public class DSSinhVien {
     public void insertAtPosition(int vt, SinhVien sv) {
         // if  vt < 1 invalid
         // if vt == 1 insert head
+        if (vt == 1) {
+            insertAtHead(sv);
+        }
         NodeSV newSv = new NodeSV(sv, null);
         NodeSV ptr = head;
         vt = vt - 1;
@@ -192,7 +195,6 @@ public class DSSinhVien {
         BufferedReader reader = new BufferedReader(fr);
         String line = null;
         while ((line = reader.readLine()) != null) {
-            //System.out.println(line);
             String[] tempLine = line.split(";");
             String maSv = tempLine[0];
             String hoTen = tempLine[1];

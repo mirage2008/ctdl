@@ -1,9 +1,9 @@
 package QLTT_GiangDay;
 
+import QLTT_GiangDay.entities.SinhVien;
+
 import java.io.IOException;
-import java.util.Collections;
 import java.util.Scanner;
-import java.util.concurrent.TimeUnit;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -21,10 +21,10 @@ public class Main {
 
         // display menu
         System.out.println("\n========================================");
-        //System.out.println("DO AN MON CAU TRUC DU LIEU VA GIAI THUAT");
-        //System.out.println("========================================");
-        //System.out.println("MENU");
-        System.out.println("1: Nhap du lieu\t2: Xuat Thong Tin\t3: Tim kiem\t4: Chen & Xoa\t5: Cap Nhat\t6: Sap Xep\t7: Gioi thieu\t8: Thoat chuong trinh");
+        System.out.println("DO AN MON CAU TRUC DU LIEU VA GIAI THUAT");
+        System.out.println("========================================");
+        System.out.println("MENU");
+        System.out.println("1: Nhap du lieu\t2: Xuat Thong Tin\t3: Tim kiem\t4: Chen & Xoa\t5: Cap Nhat\t6: Luu DS\t7: Gioi thieu\t8: Thoat chuong trinh");
 
         while (!stop) {
             System.out.print("Nhap lua chon: ");
@@ -33,7 +33,6 @@ public class Main {
             switch (choice) {
                 case "1":
                     System.out.println("chuc nang 1: Nhap du lieu");
-                    //dsSinhVien.ReadFile_DSSV(dsSinhVien);
                     dsSinhVien.inputDSSV();
                     break;
                 case "2":
@@ -42,31 +41,31 @@ public class Main {
                     break;
                 case "3":
                     System.out.println("chuc nang 3: Tim kiem");
-                    System.out.println("Input what u looking for: ");
+                    System.out.print("Nhap ma sinh vien can tim: ");
                     String searchMAsv = in.next();
                     dsSinhVien.search(searchMAsv);
                     break;
                 case "4":
                     System.out.println("chuc nang 4: Chen & Xoa");
-//                    System.out.println("Input vi tri can chen: ");
-//                    int vt = in.nextInt();
-//                    SinhVien sv = new SinhVien();
-//                    dsSinhVien.inputSV(sv);
-//                    dsSinhVien.insertAtPosition(vt,sv);
+                    System.out.print("Input vi tri can chen: ");
+                    int vt = in.nextInt();
+                    SinhVien sv = new SinhVien();
+                    dsSinhVien.inputSV(sv);
+                    dsSinhVien.insertAtPosition(vt,sv);
+
                     System.out.println("Input maSv can xoa: ");
                     String masv = in.next();
                     dsSinhVien.deleteSvByMaSv(masv);
-                    //dsSinhVien.WriteListSvToFile();
                     break;
                 case "5":
                     System.out.println("chuc nang 5: Cap Nhat");
-                    System.out.println("Input maSv can cap nhat: ");
+                    System.out.print("Input maSv can cap nhat: ");
                     String masv2 = in.next();
                     dsSinhVien.replace(masv2);
-                    dsSinhVien.WriteListSvToFile();
                     break;
                 case "6":
-                    System.out.println("chuc nang 6: Sap Xep");
+                    System.out.println("chuc nang 6: Save Danh Sach");
+                    dsSinhVien.WriteListSvToFile();
                     break;
                 case "7":
                     System.out.println("Chuc nang 7: Gioi thieu");
