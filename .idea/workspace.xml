@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b755c22-5db0-4c82-9446-d458a178693e" name="Default Changelist" comment="" />
+    <list default="true" id="3b755c22-5db0-4c82-9446-d458a178693e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/DoAn_CTDL/src/QLTT_GiangDay/utils/note.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoAn_CTDL/src/QLTT_GiangDay/DSSinhVien.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoAn_CTDL/src/QLTT_GiangDay/DSSinhVien.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoAn_CTDL/src/QLTT_GiangDay/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoAn_CTDL/src/QLTT_GiangDay/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +25,26 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/DoAn_CTDL" />
   </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="QLTT_GiangDay.Main" />
+      <module name="ctdl" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="QLTT_GiangDay.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -30,5 +55,16 @@
       <updated>1607435521207</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

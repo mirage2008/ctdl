@@ -190,7 +190,7 @@ public class DSSinhVien {
         writer.close();
     }
     public void ReadFile_DSSV(DSSinhVien dsSinhVien) throws IOException {
-        File fileSV = new File("SinhVien.dat");
+        File fileSV = new File("DoAn_CTDL/SinhVien.dat");
         FileReader fr = new FileReader(fileSV);
         BufferedReader reader = new BufferedReader(fr);
         String line = null;

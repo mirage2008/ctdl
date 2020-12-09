@@ -1,0 +1,4 @@
+#out
+DoAn_CTDL/out/*
+.idea/*
+.idea/workspace.xml

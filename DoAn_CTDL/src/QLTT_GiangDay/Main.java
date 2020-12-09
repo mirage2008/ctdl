@@ -15,9 +15,6 @@ public class Main {
 
         // load file
         dsSinhVien.ReadFile_DSSV(dsSinhVien);
-//        SinhVien sang = new SinhVien("n15dcat065", "Chau Thanh Sang", "D15CQAT01-N");
-//        SinhVien hai = new SinhVien("n15dcat070", "Do Thanh Hai", "D15CCAT01-N");
-//        SinhVien cong = new SinhVien("n15dcat054", "Nguyen Chi Cong", "D15CQAT01-N");
 
         // display menu
         System.out.println("\n========================================");
